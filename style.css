@@ -1,0 +1,135 @@
+.bg {
+    background: #30336b;
+}
+
+.box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 57px 70px 57px 65px;
+    margin: 60px auto;
+    max-width: 600px;
+}
+.line{
+    border-top: 5px double #130f40;
+}
+.title {
+    font-size: 24px;
+    color: #130f40;
+    font-weight: 800;
+}
+
+.sub_title{
+    font-size: 20px;
+    color: #30336b;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.mr-8{
+    margin-top:-5px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-2 {
+    width: 49%;
+}
+
+@media (max-width: 767px) {
+    .col-2 {
+        width: 100%;
+    }
+}
+.col {
+    width: 98%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 22px;
+}
+.label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.input {
+    line-height: 35px;
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    width: 90%;
+    border: 2px solid #74b9ff;
+}
+
+.col-2 input {
+    width: 80%;
+}
+.select{
+    height: 38px;
+    width: 95%;
+}
+
+.l_radio {
+    position: relative;
+    cursor: pointer;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #636e72;
+    font-weight: 400;
+}
+
+.form-radio {
+    display: none;
+}
+
+.form-radio+.l_radio {
+    margin-top: -5px;
+    padding-left: 40px;
+    margin-left: 30px;
+}
+
+.form-radio+.l_radio::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #74b9ff;
+    border-radius: 50%;
+}
+
+.form-radio:checked+.l_radio::before {
+    background: #74b9ff;
+    border: 2px solid #0984e3;
+    width: 24px;
+    height: 24px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    border-radius: 15px;
+    background-color: #0984e3;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 95%;
+    border: 2px solid #0984e3;
+}
+
+input[type="reset"] {
+    border: 2px solid #0984e3;
+    background-color: white;
+    color: #0984e3;
+}

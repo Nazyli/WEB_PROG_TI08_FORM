@@ -1,0 +1,186 @@
+<!-- 
+Nama   : Evry Nazyli Ciptanto
+NIM    : 0110220045
+Prodi  : Teknik Informatika - TI08
+
+STT Terpadu Nurul Fikri
+Web Programming - Form HTML
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Siswa</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+
+<body class="bg">
+    <form>
+        <div class="box">
+            <h2 class="title">Student Registration Form</h2>
+            <hr class="line"/>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Date</label>
+                        <input class="input" type="date" name="date" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Information -->
+            <h3 class=" mr-8 sub_title">Personal Information</h3>
+            <div class="col">
+                <div class="input-group">
+                    <label class="label">Name</label>
+                    <input class="input" type="text" name="name" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="label">Date Of Birth</label>
+                    <input class="input" type="text" name="date_of_birth" />
+                </div>
+            </div>
+
+
+            <!-- Contact Information -->
+            <h3 class="sub_title">Contact Information</h3>
+            <div class="col">
+                <div class="input-group">
+                    <label class="label">Address</label>
+                    <textarea name="address" class="input"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">City</label>
+                        <input class="input" type="text" name="city" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Province/State</label>
+                        <select name="province" class="input select">
+                            <option value="Jawa Timur"> Jawa Timur</option>
+                            <option value="Jawa Tengah"> Jawa Tengah</option>
+                            <option value="Jawa Barat"> Jawa Barat</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Zip Code</label>
+                        <input class="input" type="text" name="zip" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Country</label>
+                        <select name="country" class="input select">
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Singapura">Singapura</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Phone</label>
+                        <input class="input" type="tel" name="phone" placeholder="+62..." />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Email</label>
+                        <input class="input" type="email" name="email" placeholder="example@email.com"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group row">
+                    <label class="label">Membership Type</label>
+                    <input type="radio" class="form-radio" name="rd" id="rd1" />
+                    <label class="l_radio" for="rd1">Reguler</label>
+                    <br />
+                    <input type="radio" class="form-radio" name="rd" id="rd2" />
+                    <label class="l_radio" for="rd2">Premium</label>
+                    <br />
+                    <input type="radio" class="form-radio" name="rd" id="rd3" />
+                    <label class="l_radio" for="rd3">VIP</label>
+                </div>
+            </div>
+
+
+
+            <!-- Course Information -->
+            <h3 class="sub_title">Course Information</h3>
+            <div class="col">
+                <div class="input-group">
+                    <label class="label">Course Name</label>
+                    <input class="input" type="text" name="course_info" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group row">
+                    <label class="label">Paymenet Details</label>
+                    <input type="radio" class="form-radio" name="pd" id="rd4" value="cash" />
+                    <label class="l_radio" for="rd4">Cash</label>
+                    <br />
+                    <input type="radio" class="form-radio" name="pd" id="rd5" value="caque" />
+                    <label class="l_radio" for="rd5">Cheque</label>
+                    <br />
+                    <input type="radio" class="form-radio" name="pd" id="rd6" value="credit" />
+                    <label class="l_radio" for="rd6">Credit Card</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="label">Comments</label>
+                    <input class="input" type="text" name="comment" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group">
+                        <input class="input" type="text" name="signature" placeholder="Student's Signature" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <input class="input" type="text" name="validated_by" placeholder="Validated By" />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group">
+                        <input class="input" type="reset" name="reset" value="Reset" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <input class="input" type="submit" name="submit" value="Register Now" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
